@@ -92,7 +92,7 @@ const NFTThumbnail = ({ NFTFlowId, showPrice, className, ...rest }: Props) => {
               </span>
               {NFTInfo?.NFTTotalPrice ? (
                 <div className='my-auto text-[10px]'>
-                  <span className='block'>$FTO</span>
+                  <span className='block'>$HPS</span>
                   <span>Avg Sale</span>
                 </div>
               ) : null}

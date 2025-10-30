@@ -143,7 +143,7 @@ const NFTPreview = ({ NFTFlowId, setShowNFTPreview }: Props) => {
                 {poolBalance ? Number(poolBalance).toFixed(2) : 'Loading...'}
               </span>
               <div className='text-[10px]'>
-                <span className='block'>$FTO</span>
+                <span className='block'>$HPS</span>
                 <span>Avg. Sale</span>
               </div>
             </div>

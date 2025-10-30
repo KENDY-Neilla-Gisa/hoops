@@ -133,7 +133,7 @@ const TransactionHistory = () => {
                 </div>
                 <div className="text-right">
                   <p className="text-gradient-primary text-lg font-bold">
-                    {Number(tx.value).toFixed(4)} FTO
+                    {Number(tx.value).toFixed(4)} HPS
                   </p>
                   <p className="text-xs text-gray-400 mt-1 truncate w-32">
                     {address && tx.from.toLowerCase() === address.toLowerCase() ? 
@@ -201,7 +201,7 @@ const Payment = () => {
       ) : (
         <div className='text-gradient-primary mt-10 flex items-center justify-center gap-2'>
           <h2 className='!h3'>{userTokenBalance}</h2>
-          <span>FTO</span>
+          <span>HPS</span>
         </div>
       )}
       <TabGroup>

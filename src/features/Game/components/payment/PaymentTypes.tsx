@@ -210,23 +210,23 @@ const PaymentTypes = () => {
                 </Button>
               </div>
               <div className='grid grid-cols-2 items-center justify-between gap-2'>
-                <span className='text-sm'>My Avail. Balance ($FTO)</span>
+                <span className='text-sm'>My Avail. Balance ($HPS)</span>
                 <Button
   variant='outline'
   rightIcon={RxCopy}
   rightIconClassName='text-primary-500 text-xl'
   size='base'
   className='w-full px-5 py-3 text-white'
-  onClick={() => handleCopy(`${Number(tokenBalance).toFixed(2)} $FTO`)}
+  onClick={() => handleCopy(`${Number(tokenBalance).toFixed(2)} $HPS`)}
   disabled={loading}
 >
   <span className='mx-auto w-full'>
-    {loading ? 'Loading...' : `${Number(tokenBalance).toFixed(2)} $FTO`}
+    {loading ? 'Loading...' : `${Number(tokenBalance).toFixed(2)} $HPS`}
   </span>
 </Button>
               </div>
               <h2 className='!h2'>
-  Bet Locked in BettingPool: {loading ? 'Loading...' : `${Number(totalInvested).toFixed(2)} $FTO`}
+  Bet Locked in BettingPool: {loading ? 'Loading...' : `${Number(totalInvested).toFixed(2)} $HPS`}
 </h2>
               <Button 
                 variant='outline' 
