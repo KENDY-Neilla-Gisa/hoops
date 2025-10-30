@@ -136,7 +136,7 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
 
 // Configure wallet connectors
 const { connectors } = getDefaultWallets({
-  appName: 'DunkVerse',
+  appName: 'HOOPS',
   projectId: '87106bd465234d097b8a51ba585bf799',
   chains,
 });

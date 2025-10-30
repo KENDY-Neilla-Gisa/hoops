@@ -2,8 +2,8 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 const defaultMeta = {
-  title: 'DunkVerse',
-  siteName: 'DunkVerse',
+  title: 'HOOPS',
+  siteName: 'HOOPS',
   description:
     'Compete against other players on a sports trivia to gain tokens and unique NFTs of your favorite players.',
   url: 'https://open-graph-generator-jp.vercel.app',

@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.dunkverse.app',
-  appName: 'DunkVerse',
+  appId: 'io.hoops.app',
+  appName: 'HOOPS',
   webDir: 'out',
   bundledWebRuntime: false,
   server: {

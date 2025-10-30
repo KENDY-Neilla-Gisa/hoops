@@ -31,7 +31,7 @@ const PaymentTypes = () => {
   const [totalInvested, setTotalInvested] = useState<string>('0');
 
   // Contract Addresses
-  const DUNKVERSE_ADDRESS = '0xb8171c4E2002Deea048477D8B337ff27F9a36687';
+  const HOOPS_TOKEN_ADDRESS = '0xb8171c4E2002Deea048477D8B337ff27F9a36687';
   const BETTING_POOL_ADDRESS = '0xac13628e37628E8e8d9238F1564841cf220742a3';
 
   // Fetch the token balance
@@ -40,8 +40,8 @@ const PaymentTypes = () => {
     try {
       setLoading(true);
       const provider = new ethers.providers.Web3Provider(window.ethereum);
-      const dunkVerseContract = new ethers.Contract(
-        DUNKVERSE_ADDRESS,
+      const hoopsTokenContract = new ethers.Contract(
+        HOOPS_TOKEN_ADDRESS,
         [
           'function balanceOf(address) view returns (uint256)',
           'function decimals() view returns (uint8)'
@@ -49,8 +49,8 @@ const PaymentTypes = () => {
         provider
       );
 
-      const balance = await dunkVerseContract.balanceOf(address);
-      const decimals = await dunkVerseContract.decimals();
+      const balance = await hoopsTokenContract.balanceOf(address);
+      const decimals = await hoopsTokenContract.decimals();
       const formattedBalance = ethers.utils.formatUnits(balance, decimals);
       setTokenBalance(formattedBalance);
     } catch (error) {
@@ -93,8 +93,8 @@ const PaymentTypes = () => {
       const signer = provider.getSigner();
       
       // First approve tokens
-      const dunkVerseContract = new ethers.Contract(
-        DUNKVERSE_ADDRESS,
+      const hoopsTokenContract = new ethers.Contract(
+        HOOPS_TOKEN_ADDRESS,
         [
           'function approve(address spender, uint256 amount) returns (bool)'
         ],
@@ -102,7 +102,7 @@ const PaymentTypes = () => {
       );
 
       const amountWei = ethers.utils.parseEther(amount);
-      const approveTx = await dunkVerseContract.approve(BETTING_POOL_ADDRESS, amountWei);
+      const approveTx = await hoopsTokenContract.approve(BETTING_POOL_ADDRESS, amountWei);
       await approveTx.wait();
 
       // Then deposit

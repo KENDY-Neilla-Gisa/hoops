@@ -135,7 +135,7 @@ export const Web3ContextProvider = ({
       addresses,
     } = NETWORK;
     const iconUrl = window.location.origin + '/images/fanbet-logo.webp';
-    const appTitle = process.env.NEXT_PUBLIC_APP_NAME || 'DunkVerse';
+    const appTitle = process.env.NEXT_PUBLIC_APP_NAME || 'HOOPS';
 
     fcl.config({
       'app.detail.title': appTitle,

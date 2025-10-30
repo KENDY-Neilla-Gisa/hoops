@@ -1,6 +1,6 @@
 export const paymentTypes = [
   {
-    name: 'DunkVerse Token',
+    name: 'HOOPS Token',
     commission: '0.1',
     imgSrc: '/images/flow-logo.png',
   },

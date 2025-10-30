@@ -24,7 +24,7 @@ const QRCodeInvitation = () => {
             imgClassName='object-cover'
             alt='qr-code'
           />
-          <h1 className='text-gradient-primary track-wide mt-10'>DunkVerse</h1>
+          <h1 className='text-gradient-primary track-wide mt-10'>HOOPS</h1>
           <span className='mt-12'>Tap to copy link to download app</span>
           <div className='mt-8 h-[1px] w-full bg-gradient-primary' />
         </div>
