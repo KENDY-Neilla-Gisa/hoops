@@ -138,7 +138,7 @@ Please read our [Contributing Guidelines](CONTRIBUTING.md) and [Code of Conduct]
 
 ## 🛡️ Security
 
-Security is our top priority. If you discover any security issues, please disclose them responsibly by contacting us at [security@hoops.app](mailto:security@hoops.app).
+Security is our top priority. If you discover any security issues, please disclose them responsibly by contacting us at [contact@hoops.app](mailto:contact@hoops.app).
 
 ## 📄 License
 
@@ -147,7 +147,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📬 Contact
 
 - **Email**: [contact@hoops.app](mailto:contact@hoops.app)
-- **GitHub Issues**: [https://github.com/KENDY-Neilla-Gisa/hoops/issues](https://github.com/KENDY-Neilla-Gisa/hoops/issues)
 
 ## 🙏 Acknowledgments
 
