@@ -17,7 +17,7 @@ contract AIGeneratedNFT is ERC721, Ownable {
 
     constructor(string memory _baseTokenURI) 
         ERC721("AI Generated NFT", "AINFT") 
-        Ownable(msg.sender) 
+        Ownable() 
     {
         baseTokenURI = _baseTokenURI;
     }

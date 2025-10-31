@@ -1,7 +1,6 @@
 {
   "name": "hardhat-project",
   "dependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "@nomiclabs/hardhat-etherscan": "^3.1.8",
     "@openzeppelin/contracts": "^4.9.2",
     "dotenv": "^16.3.1",
@@ -12,6 +11,7 @@
     "test": "npx hardhat test"
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-verify": "^2.0.9"
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@nomicfoundation/hardhat-verify": "^2.1.3"
   }
 }
