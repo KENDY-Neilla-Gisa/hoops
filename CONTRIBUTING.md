@@ -84,12 +84,6 @@ cd web3-contracts
 npx hardhat test
 ```
 
-## 🆘 Getting Help
-
-- Join our [Discord](https://discord.gg/hoops)
-- Open an [issue](https://github.com/KENDY-Neilla-Gisa/hoops/issues)
-- Check the [FAQ](./FAQ.md)
-
 ## 🏆 Hackathon-Specific
 
 ### Judging Criteria
