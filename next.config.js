@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    suppressDeprecationWarnings: true
+  },
   eslint: {
     dirs: ['src'],
     ignoreDuringBuilds: true, // Skip ESLint during build
