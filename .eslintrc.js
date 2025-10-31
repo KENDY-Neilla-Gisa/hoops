@@ -17,15 +17,6 @@ module.exports = {
     'no-console': 'warn',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'react/no-unescaped-entities': 'off',
-
-    'react/display-name': 'off',
-    'react/jsx-curly-brace-presence': [
-      'warn',
-      { props: 'never', children: 'never' },
-    ],
-
-    //#region  //*=========== Unused Import ===========
-    '@typescript-eslint/no-unused-vars': 'off',
     'unused-imports/no-unused-imports': 'warn',
     'unused-imports/no-unused-vars': [
       'warn',
@@ -35,19 +26,19 @@ module.exports = {
         args: 'after-used',
         argsIgnorePattern: '^_',
       },
-      'error',
-      { varsIgnorePattern: '^_' },
     ],
-    //#endregion  //*======== Unused Import ===========
-
-    //#region  //*=========== Import Sort ===========
+    'react/display-name': 'off',
+    'react/jsx-curly-brace-presence': [
+      'warn',
+      { props: 'never', children: 'never' },
+    ],
     'simple-import-sort/exports': 'warn',
     'simple-import-sort/imports': [
       'warn',
       {
         groups: [
           // ext library & side effect imports
-          ['^@?\\w', '^\\u0000'],
+          ['^@?\\w', '^\\\\u0000'],
           // {s}css files
           ['^.+\\.s?css$'],
           // Lib and hooks
@@ -64,12 +55,12 @@ module.exports = {
           [
             '^\\./?$',
             '^\\.(?!/?$)',
-            '^\\.\\./?$',
-            '^\\.\\.(?!/?$)',
-            '^\\.\\./\\.\\./?$',
-            '^\\.\\./\\.\\.(?!/?$)',
-            '^\\.\\./\\.\\./\\.\\./?$',
-            '^\\.\\./\\.\\./\\.\\.(?!/?$)',
+            '^\\\\.\\./?$',
+            '^\\\\.\\.(?!/?$)',
+            '^\\\\.\\./\\\\.\\./?$',
+            '^\\\\.\\./\\\\.\\.(?!/?$)',
+            '^\\\\.\\./\\\\.\\./\\\\.\\./?$',
+            '^\\\\.\\./\\\\.\\./\\\\.\\.(?!/?$)',
           ],
           ['^@/types'],
           // other that didnt fit in
@@ -77,7 +68,6 @@ module.exports = {
         ],
       },
     ],
-    //#endregion  //*======== Import Sort ===========
   },
   globals: {
     React: true,

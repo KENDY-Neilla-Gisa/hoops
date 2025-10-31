@@ -1,0 +1,31 @@
+# Ignore web3-contracts directory but keep necessary artifacts
+web3-contracts/
+!web3-contracts/artifacts
+!web3-contracts/typechain-types
+
+# Ignore development files
+.env*.local
+.eslintrc.js
+.prettierrc.js
+
+# Ignore tests and mocks
+**/__tests__
+**/__mocks__
+
+# Ignore development configurations
+hardhat.config.*
+tsconfig.*.json
+
+# Ignore CI/CD and version control
+.github/
+.git/
+.gitignore
+
+# Ignore local development files
+.cache/
+.temp/
+.tmp/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
